@@ -1,6 +1,6 @@
 export const ImageValue = [
   {
-    href: "/",
+    href: "/tictactoe",
     src: "/img/tictactoe.PNG",
     alt: "TicTacToe",
   },
