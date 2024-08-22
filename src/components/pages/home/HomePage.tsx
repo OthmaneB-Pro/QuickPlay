@@ -1,25 +1,13 @@
 import styled from "styled-components";
 import TitleHome from "./TitleHome";
+import ImageContainer from "./imageContainer/ImageContainer";
 
 export default function HomePage() {
   return (
     <HomePageStyled>
       <div className="container">
-       <TitleHome/>
-        <div className="image-container">
-          <div>
-          <a href="/"><img src="/img/tictactoe.PNG" alt="TicTacToe" /></a> 
-          </div>
-          <div>
-            <a href="/"><img src="/img/memory.webp" alt="Memory" /></a> 
-          </div>
-          <div>
-           <a href="/"><img src="/img/PierrePapierCiseaux.jpg" alt="PierrePapierCiseaux" /></a> 
-          </div>
-          <div>
-           <a href="/"><img src="/img/guessTheNumber.webp" alt="GuessTheNumber" /></a> 
-          </div>
-        </div>
+        <TitleHome />
+        <ImageContainer />
       </div>
     </HomePageStyled>
   );
@@ -38,20 +26,5 @@ const HomePageStyled = styled.div`
     border-radius: 15px;
     border: 2px solid;
     background-color: white;
-
-    .image-container {
-      width: 650px;
-      margin-left: 280px;
-      margin-top: 80px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      row-gap: 20px;
-    }
-    img {
-      width: 300px;
-      height: 180px;
-      border-radius: 15px;
-    }
   }
 `;

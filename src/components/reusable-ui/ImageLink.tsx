@@ -17,7 +17,9 @@ export default function ImageLink({ href, src, alt }: ImageLinkType) {
 }
 
 const ImageLinkStyled = styled.div`
-  width: 300px;
-  height: 180px;
-  border-radius: 15px;
+  img {
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
+  }
 `;
