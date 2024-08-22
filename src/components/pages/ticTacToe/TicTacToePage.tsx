@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { VscDebugRestart } from "react-icons/vsc";
 import Board from "./game/Board";
-import { useNavigate } from "react-router-dom";
 
 export default function TicTacToePage() {
-    const navigate = useNavigate()
   return (
     <TicTacToeStyled>
       <div className="container">
@@ -16,7 +14,7 @@ export default function TicTacToePage() {
             Simple à jouer, mais complexe à maîtriser !
           </p>
           <button>Revenir à l'accueil</button>
-          <button onClick={() => navigate("/tictactoe")}>
+          <button onClick={() => window.location.reload()}>
             <VscDebugRestart />
           </button>
         </div>
