@@ -1,0 +1,22 @@
+export const ImageValue = [
+  {
+    href: "/",
+    src: "/img/tictactoe.PNG",
+    alt: "TicTacToe",
+  },
+  {
+    href: "/",
+    src: "/img/memory.webp",
+    alt: "Memory",
+  },
+  {
+    href: "/",
+    src: "/img/PierrePapierCiseaux.jpg",
+    alt: "PierrePapierCiseaux",
+  },
+  {
+    href: "/",
+    src: "/img/guessTheNumber.webp",
+    alt: "GuessTheNumber",
+  },
+];
