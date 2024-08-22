@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { VscDebugRestart } from "react-icons/vsc";
 
 export default function TicTacToePage() {
   return (
@@ -12,7 +13,7 @@ export default function TicTacToePage() {
             Simple à jouer, mais complexe à maîtriser !
           </p>
           <button>Revenir à l'accueil</button>
-          <button>Recommencer</button>
+          <button><VscDebugRestart /></button>
         </div>
 
         <div className="container-board">
@@ -48,6 +49,13 @@ const TicTacToeStyled = styled.div`
     justify-content: space-between;
     align-items: center;
   }
+
+  h1{
+    font-size: 40px;
+  }
+  p{
+    margin-bottom: 30px;
+  }
   .text{
     margin-left: 60px;
     display: flex;
@@ -56,6 +64,17 @@ const TicTacToeStyled = styled.div`
     align-items: center;
     width: 300px;
     text-align: justify;
+
+    button{
+        color: white;
+        border: 3px solid black;
+        background-color: #e7d803;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor : pointer;
+        margin-bottom: 20px;
+    }
   }
   .container-board {
     width: 480px;
@@ -71,7 +90,7 @@ const TicTacToeStyled = styled.div`
     .board {
       width: 150px;
       height: 150px;
-      background: blue;
+      background: #c8d8a1;
       border: 3px solid;
     }
   }

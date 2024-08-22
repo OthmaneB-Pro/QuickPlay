@@ -8,9 +8,7 @@ export default function ImageContainer() {
       {ImageValue.map((image, index) => (
         <ImageLink
           key={index}
-          href={image.href}
-          src={image.src}
-          alt={image.alt}
+          {...image}
         />
       ))}
     </ImageContainerStyled>
