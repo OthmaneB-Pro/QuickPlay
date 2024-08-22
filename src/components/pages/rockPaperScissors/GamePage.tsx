@@ -6,9 +6,9 @@ export default function TicTacToePage() {
   return (
     <TicTacToeStyled>
       <div className="container">
-        <RockPaperScissorsText/>
-        <RockPaperScissorsGame/>
-             </div>
+        <RockPaperScissorsText />
+        <RockPaperScissorsGame />
+      </div>
     </TicTacToeStyled>
   );
 }
