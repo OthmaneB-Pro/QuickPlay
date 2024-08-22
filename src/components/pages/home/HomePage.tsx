@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import TitleHome from "./TitleHome";
 
 export default function HomePage() {
   return (
     <HomePageStyled>
       <div className="container">
-        <h1>QuickPlay</h1>
+       <TitleHome/>
         <div className="image-container">
           <div>
           <a href="/"><img src="/img/tictactoe.PNG" alt="TicTacToe" /></a> 
@@ -38,12 +39,6 @@ const HomePageStyled = styled.div`
     border: 2px solid;
     background-color: white;
 
-    h1{
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-    }
-
     .image-container {
       width: 650px;
       margin-left: 280px;
@@ -57,9 +52,6 @@ const HomePageStyled = styled.div`
       width: 300px;
       height: 180px;
       border-radius: 15px;
-    }
-    p {
-      text-align: justify;
     }
   }
 `;
