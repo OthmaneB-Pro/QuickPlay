@@ -10,7 +10,7 @@ export const ImageValue = [
     alt: "Memory",
   },
   {
-    href: "/",
+    href: "/rockpaperscissors",
     src: "/img/PierrePapierCiseaux.jpg",
     alt: "PierrePapierCiseaux",
   },
