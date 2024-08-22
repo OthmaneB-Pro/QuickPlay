@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import { VscDebugRestart } from "react-icons/vsc";
+import Board from "./game/Board";
+import { useNavigate } from "react-router-dom";
 
 export default function TicTacToePage() {
+    const navigate = useNavigate()
   return (
     <TicTacToeStyled>
       <div className="container">
@@ -13,20 +16,11 @@ export default function TicTacToePage() {
             Simple à jouer, mais complexe à maîtriser !
           </p>
           <button>Revenir à l'accueil</button>
-          <button><VscDebugRestart /></button>
+          <button onClick={() => navigate("/tictactoe")}>
+            <VscDebugRestart />
+          </button>
         </div>
-
-        <div className="container-board">
-          <button className="board"></button>
-          <button className="board"></button>
-          <button className="board"></button>
-          <button className="board"></button>
-          <button className="board"></button>
-          <button className="board"></button>
-          <button className="board"></button>
-          <button className="board"></button>
-          <button className="board"></button>
-        </div>
+        <Board />
       </div>
     </TicTacToeStyled>
   );
@@ -50,13 +44,13 @@ const TicTacToeStyled = styled.div`
     align-items: center;
   }
 
-  h1{
+  h1 {
     font-size: 40px;
   }
-  p{
+  p {
     margin-bottom: 30px;
   }
-  .text{
+  .text {
     margin-left: 60px;
     display: flex;
     flex-direction: column;
@@ -65,33 +59,15 @@ const TicTacToeStyled = styled.div`
     width: 300px;
     text-align: justify;
 
-    button{
-        color: white;
-        border: 3px solid black;
-        background-color: #e7d803;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor : pointer;
-        margin-bottom: 20px;
-    }
-  }
-  .container-board {
-    width: 480px;
-    border: 5px solid;
-    border-radius: 15px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 10px;
-    margin-right: 150px;
-
-    .board {
-      width: 150px;
-      height: 150px;
-      background: #c8d8a1;
-      border: 3px solid;
+    button {
+      color: white;
+      border: 3px solid black;
+      background-color: #e7d803;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
     }
   }
 `;
