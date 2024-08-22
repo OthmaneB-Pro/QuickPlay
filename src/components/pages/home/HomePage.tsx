@@ -6,13 +6,17 @@ export default function HomePage() {
       <div className="container">
         <h1>QuickPlay</h1>
         <div className="image-container">
-          <div className="image">
-            <img src="/img/tictactoe.PNG" alt="TicTacToe" />
-            <img src="/img/memory.webp" alt="Memory" />
+          <div>
+          <a href="/"><img src="/img/tictactoe.PNG" alt="TicTacToe" /></a> 
           </div>
-          <div className="image">
-            <img src="/img/PierrePapierCiseaux.jpg" alt="PierrePapierCiseaux" />
-            <img src="/img/guessTheNumber.webp" alt="GuessTheNumber" />
+          <div>
+            <a href="/"><img src="/img/memory.webp" alt="Memory" /></a> 
+          </div>
+          <div>
+           <a href="/"><img src="/img/PierrePapierCiseaux.jpg" alt="PierrePapierCiseaux" /></a> 
+          </div>
+          <div>
+           <a href="/"><img src="/img/guessTheNumber.webp" alt="GuessTheNumber" /></a> 
           </div>
         </div>
       </div>
@@ -30,22 +34,29 @@ const HomePageStyled = styled.div`
   .container {
     width: 1200px;
     height: 600px;
+    border-radius: 15px;
+    border: 2px solid;
     background-color: white;
 
+    h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
     .image-container {
+      width: 650px;
+      margin-left: 280px;
+      margin-top: 80px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       row-gap: 20px;
     }
     img {
-      width: 250px;
-      height: 150px;
-    }
-
-    .image {
-      grid-area: 2;
-      width: 250px;
-      padding: 10px;
+      width: 300px;
+      height: 180px;
+      border-radius: 15px;
     }
     p {
       text-align: justify;
