@@ -4,11 +4,12 @@ type ButtonType = {
   onClick: () => void;
   label: string;
   Icon?: JSX.Element;
+  className? : string;
 };
 
-export default function Button({ onClick, label, Icon }: ButtonType) {
+export default function Button({ onClick, label, Icon, className }: ButtonType) {
   return (
-    <ButtonStyled onClick={onClick}>
+    <ButtonStyled className={className} onClick={onClick}>
       {label}
       {Icon && Icon}
     </ButtonStyled>
