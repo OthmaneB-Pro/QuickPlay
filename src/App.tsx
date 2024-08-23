@@ -4,6 +4,7 @@ import ErrorPage from "./components/pages/error/ErrorPage";
 import TicTacToePage from "./components/pages/ticTacToe/TicTacToePage";
 import GamePage from "./components/pages/rockPaperScissors/GamePage";
 import GuessNumberPage from "./components/pages/guessTheNumber/GuessNumberPage";
+import MemoryPage from "./components/pages/memory/MemoryPage";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/tictactoe" element={<TicTacToePage/>} />
         <Route path="/rockpaperscissors" element={<GamePage/>} />
         <Route path="/guessnumber" element={<GuessNumberPage/>} />
+        <Route path="/memory" element={<MemoryPage/>} />
       </Routes>
     </BrowserRouter>
   );

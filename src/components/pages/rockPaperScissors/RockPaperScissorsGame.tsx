@@ -2,14 +2,11 @@ import styled from "styled-components";
 import { ButtonValue } from "./buttonImageValue";
 import ButtonImage from "../../reusable-ui/ButtonImage";
 import { useState } from "react";
+import { getRandomInt } from "../../../utils/GameFunction";
 
 export default function RockPaperScissorsGame() {
   const [image, setImage] = useState("");
   const [result, setResult] = useState("");
-
-  function getRandomInt(max: number) {
-    return Math.floor(Math.random() * max);
-  }
 
   const handleClick = (index: number) => {
     const random = getRandomInt(3);

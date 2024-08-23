@@ -5,7 +5,7 @@ export const ImageValue = [
     alt: "TicTacToe",
   },
   {
-    href: "/",
+    href: "/memory",
     src: "/img/memory.webp",
     alt: "Memory",
   },
