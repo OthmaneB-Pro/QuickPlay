@@ -15,7 +15,7 @@ export const ImageValue = [
     alt: "PierrePapierCiseaux",
   },
   {
-    href: "/",
+    href: "/guessnumber",
     src: "/img/guessTheNumber.webp",
     alt: "GuessTheNumber",
   },
