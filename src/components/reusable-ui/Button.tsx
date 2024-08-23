@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 type ButtonType = {
-  onClick: () => void;
+  onClick?: () => void;
   label: string;
   Icon?: JSX.Element;
   className? : string;
+  type? : "button" | "submit" | "reset"; 
 };
 
-export default function Button({ onClick, label, Icon, className }: ButtonType) {
+export default function Button({ onClick, label, Icon, className, type ='button' }: ButtonType) {
   return (
-    <ButtonStyled className={className} onClick={onClick}>
+    <ButtonStyled className={className} onClick={onClick} type={type}>
       {label}
       {Icon && Icon}
     </ButtonStyled>
