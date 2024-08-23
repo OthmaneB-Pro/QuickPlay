@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import LeftMemory from "./leftSide/LeftMemory";
-import MemoryGame from "./MemoryGame";
+import MemoryGame from "./game/MemoryGame";
 
 export default function MemoryPage() {
   return (
