@@ -7,7 +7,7 @@ export default function GuessNumberPage() {
     <GuessNumberStyled>
       <div className="container">
         <LeftGuessNumber />
-        <GameGuessNumber/>
+        <GameGuessNumber />
       </div>
     </GuessNumberStyled>
   );

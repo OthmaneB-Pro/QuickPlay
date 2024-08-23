@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Button from "../../reusable-ui/Button";
+import InputValue from "../../reusable-ui/InputValue";
 
 export default function GameGuessNumber() {
   const [guessNumber, setGuessNumber] = useState(0);
@@ -36,7 +37,7 @@ export default function GameGuessNumber() {
     <GameStyled>
       <h1>{messageResult}</h1>
       <form onSubmit={handleSubmit}>
-        <input
+        <InputValue
           name="valuenumber"
           type="number"
           value={valueNumber}
@@ -55,13 +56,6 @@ const GameStyled = styled.div`
   flex-direction: column;
   margin-right: 200px;
 
-  input {
-    padding: 10px;
-    font-size: 30px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
   .submit-button {
     width: 390px;
     background: #ca9288;
