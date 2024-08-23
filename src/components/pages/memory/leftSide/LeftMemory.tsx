@@ -9,7 +9,7 @@ export default function LeftMemory() {
 
   return (
     <LeftMemoryStyled>
-        <TitleMemory/>
+      <TitleMemory />
       <Button
         className="button"
         onClick={() => navigate("/")}
