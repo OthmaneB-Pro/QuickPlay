@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import LeftMemory from "./leftSide/LeftMemory";
+import MemoryGame from "./MemoryGame";
 
 export default function MemoryPage() {
   return (
     <MemoryPageStyled>
       <div className="container">
-        <LeftMemory/>
+        <LeftMemory />
+        <MemoryGame />
       </div>
     </MemoryPageStyled>
   );
