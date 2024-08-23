@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import LeftGuessNumber from "./leftSide/LeftGuessNumber";
+import GameGuessNumber from "./GameGuessNumber";
 
 export default function GuessNumberPage() {
   return (
     <GuessNumberStyled>
       <div className="container">
         <LeftGuessNumber />
+        <GameGuessNumber/>
       </div>
     </GuessNumberStyled>
   );
