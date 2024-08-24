@@ -55,6 +55,7 @@ const Wrapper = styled.div`
   .opponent-choice {
     width: 120px;
     margin-bottom: 20px;
+    transform: rotate(180deg);  
   }
   h2 {
     font-size: 24px;
