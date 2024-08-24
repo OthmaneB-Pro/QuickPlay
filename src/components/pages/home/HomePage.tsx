@@ -14,7 +14,7 @@ export default function HomePage() {
 }
 
 const HomePageStyled = styled.div`
-  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  background: linear-gradient(135deg, #f5a5a5 0%, #fce8e8 100%);
   height: 100vh;
   display: flex;
   justify-content: center;

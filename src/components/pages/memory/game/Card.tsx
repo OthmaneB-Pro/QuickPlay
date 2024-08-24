@@ -33,6 +33,8 @@ const CardStyled = styled.div<{ flipped: boolean; matched: boolean }>`
   perspective: 1000px;
   cursor: pointer;
   opacity: ${({ matched }) => (matched ? 0.5 : 1)};
+  transform: ${({ matched }) => (matched ? "scale(0.95)" : "scale(1)")};
+  transition: transform 0.3s ease, opacity 0.3s ease;
 
   .card-inner {
     width: 100%;
@@ -50,6 +52,7 @@ const CardStyled = styled.div<{ flipped: boolean; matched: boolean }>`
     width: 100%;
     backface-visibility: hidden;
     border: 1px solid black;
+    border-radius: 10px;
   }
 
   .card-back {
@@ -59,5 +62,6 @@ const CardStyled = styled.div<{ flipped: boolean; matched: boolean }>`
   img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
   }
 `;
