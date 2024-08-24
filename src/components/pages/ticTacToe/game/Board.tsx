@@ -59,21 +59,31 @@ export default function Board() {
 
 const BoardStyle = styled.div`
   width: 480px;
-  border: 5px solid;
-  border-radius: 15px;
+  border: 5px solid #4a7c59;
+  border-radius: 20px;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  row-gap: 10px;
-  margin-right: 150px;
+  gap: 10px;
+  margin-right: 50px;
+  background-color: #f0f8ec;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
 
   button {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     background: #c8d8a1;
-    border: 3px solid;
+    border: 3px solid #8fb996;
     cursor: pointer;
     font-size: 2rem;
+    color: #4a7c59;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    background-color: #b8cbb1;
   }
 `;
