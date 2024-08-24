@@ -59,7 +59,11 @@ const MemoryGameStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
   width: 560px;
-  margin-right: 100px;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: #f0f9fc;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 `;

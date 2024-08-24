@@ -51,10 +51,27 @@ const GameStyled = styled.div`
   width: 400px;
   display: flex;
   flex-direction: column;
-  margin-right: 200px;
+  align-items: center;
+  margin-right: 50px;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #773c35;
+  }
 
   .submit-button {
-    width: 390px;
+    width: 100%;
     background: #ca9288;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color: #b08177;
   }
 `;

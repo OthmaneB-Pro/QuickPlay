@@ -24,8 +24,10 @@ export default function LeftMemory() {
     </LeftMemoryStyled>
   );
 }
+
+
 const LeftMemoryStyled = styled.div`
-  margin-left: 60px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,6 +36,16 @@ const LeftMemoryStyled = styled.div`
   text-align: justify;
 
   .button {
+    margin-top: 20px;
     background-color: #5bc3e2;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #4aa6c1;
   }
 `;

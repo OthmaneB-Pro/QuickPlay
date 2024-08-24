@@ -15,10 +15,14 @@ export default function TitleMemory() {
 
 const TitleMemoryStyled = styled.div`
   h1 {
-    font-size: 36px;
+    font-size: 40px;
     font-family: "Amatic SC";
+    color: #285f6b;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
   }
   p {
     margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #4a4a4a;
   }
 `;

@@ -21,11 +21,25 @@ export default function TextLeftSide() {
 }
 
 const TextStyled = styled.div`
-  margin-left: 60px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 300px;
   text-align: justify;
+
+  button {
+    margin-top: 20px;
+    background-color: #8fb996;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #729d7c;
+  }
 `;

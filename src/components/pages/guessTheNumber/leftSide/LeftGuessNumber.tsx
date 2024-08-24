@@ -25,7 +25,7 @@ export default function LeftGuessNumber() {
   );
 }
 const LeftGuessStyled = styled.div`
-  margin-left: 60px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,6 +34,16 @@ const LeftGuessStyled = styled.div`
   text-align: justify;
 
   .button {
+    margin-top: 20px;
     background-color: #ca9288;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #b08177;
   }
 `;
